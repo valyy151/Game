@@ -27,7 +27,7 @@ document.addEventListener('keydown', (e) => {
 
 class Obstacle {
 	constructor() {
-		this.positionX = Math.random() * 100 + 'vw';
+		this.positionX = Math.random() * 98 + 1 + 'vw';
 		this.positionY = 100;
 
 		this.createObstacle();
@@ -53,6 +53,10 @@ const obstacleArray = [];
 setInterval(() => {
 	const obstacle = new Obstacle();
 	obstacleArray.push(obstacle);
-}, 1000);
+}, 400);
 
-setInterval(() => {}, 50);
+setInterval(() => {
+	obstacleArray.forEach((obstacle) => {
+		obstacle.move();
+	});
+}, 50);

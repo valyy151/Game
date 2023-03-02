@@ -1,3 +1,18 @@
 body {
 	background: #ffcc6d;
+	margin: 0;
+}
+
+.board {
+	background: #ffcc6d;
+	height: 100vh;
+	position: relative;
+}
+
+#player {
+	background: rgb(99, 99, 255);
+	height: 5vh;
+	width: 10vw;
+	position: absolute;
+	bottom: 0;
 }
